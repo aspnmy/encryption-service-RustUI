@@ -1,0 +1,143 @@
+{
+  "app_state": {
+    "business_groups": [
+      {
+        "id": "6e09d315-41db-4b8a-b696-364ece4bc742",
+        "name": "私密资源管理",
+        "description": "私密资源管理",
+        "middlewares": [
+          {
+            "id": "2b97f96e-3e24-45b5-8145-0b1a57c6fc01",
+            "name": "新中间层容器",
+            "url": "http://localhost:9999",
+            "docker_run_params": "",
+            "config": {
+              "server": {
+                "host": "0.0.0.0",
+                "port": 9999,
+                "https": false
+              },
+              "jwt": {
+                "secret": "default_jwt_secret_123456",
+                "expires_in": 3600,
+                "refresh_in": 86400
+              },
+              "encryption": {
+                "algorithm": "aes-256-gcm",
+                "key_length": 32,
+                "iterations": 100000,
+                "salt": "default_salt"
+              },
+              "service": {
+                "role": "mixed",
+                "id": "encryption-01"
+              },
+              "crud_api": {
+                "instances": [],
+                "strategy": "read_write_split",
+                "health_check_interval": 30,
+                "timeout": 5000,
+                "retries": 3
+              }
+            },
+            "backend_containers": [],
+            "status": "Stopped",
+            "health": "Unknown",
+            "logs": [],
+            "agent_installed": false
+          },
+          {
+            "id": "2cddb3ab-7845-447c-b57f-66a94f378e93",
+            "name": "新中间层容器",
+            "url": "http://localhost:9999",
+            "docker_run_params": "",
+            "config": {
+              "server": {
+                "host": "0.0.0.0",
+                "port": 9999,
+                "https": false
+              },
+              "jwt": {
+                "secret": "default_jwt_secret_123456",
+                "expires_in": 3600,
+                "refresh_in": 86400
+              },
+              "encryption": {
+                "algorithm": "aes-256-gcm",
+                "key_length": 32,
+                "iterations": 100000,
+                "salt": "default_salt"
+              },
+              "service": {
+                "role": "mixed",
+                "id": "encryption-01"
+              },
+              "crud_api": {
+                "instances": [],
+                "strategy": "read_write_split",
+                "health_check_interval": 30,
+                "timeout": 5000,
+                "retries": 3
+              }
+            },
+            "backend_containers": [],
+            "status": "Stopped",
+            "health": "Unknown",
+            "logs": [],
+            "agent_installed": true
+          },
+          {
+            "id": "bf0da96e-7044-497f-896a-ebc05e870263",
+            "name": "新中间层容器",
+            "url": "http://localhost:9999",
+            "docker_run_params": "",
+            "config": {
+              "server": {
+                "host": "0.0.0.0",
+                "port": 9999,
+                "https": false
+              },
+              "jwt": {
+                "secret": "default_jwt_secret_123456",
+                "expires_in": 3600,
+                "refresh_in": 86400
+              },
+              "encryption": {
+                "algorithm": "aes-256-gcm",
+                "key_length": 32,
+                "iterations": 100000,
+                "salt": "default_salt"
+              },
+              "service": {
+                "role": "mixed",
+                "id": "encryption-01"
+              },
+              "crud_api": {
+                "instances": [],
+                "strategy": "read_write_split",
+                "health_check_interval": 30,
+                "timeout": 5000,
+                "retries": 3
+              }
+            },
+            "backend_containers": [],
+            "status": "Stopped",
+            "health": "Unknown",
+            "logs": [],
+            "agent_installed": false
+          }
+        ],
+        "status": "Stopped",
+        "created_at": "2025-12-04T13:12:05.761186500Z",
+        "updated_at": "2025-12-04T13:12:05.761186500Z"
+      }
+    ],
+    "selected_group_id": null,
+    "selected_middleware_id": null,
+    "selected_backend_id": null
+  },
+  "last_opened": "2025-12-04 13:12:38.701559600 UTC",
+  "theme": "dark",
+  "auto_save": true,
+  "save_interval": 30
+}

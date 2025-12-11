@@ -1,0 +1,21 @@
+[package]
+name = "encryption-service-ui"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+eframe = "0.27.0"
+egui = "0.27.0"
+reqwest = { version = "0.12.5", features = ["json", "blocking"] }
+serde = { version = "1.0.203", features = ["derive"] }
+serde_json = "1.0.117"
+chrono = { version = "0.4.38", features = ["serde"] }
+uuid = { version = "1.10.0", features = ["v4", "serde"] }
+dotenvy = "0.15.1"
+tokio = { version = "1.38.0", features = ["full"] }
+tracing = "0.1.40"
+tracing-subscriber = "0.3.18"
+anyhow = "1.0.86"
+thiserror = "1.0.61"
+rand = "0.8.5"
+
